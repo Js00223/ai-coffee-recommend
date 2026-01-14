@@ -82,9 +82,11 @@ const RecommendationForm: React.FC<FormProps> = ({ onSubmit, isLoading }) => {
       <button
         type="submit"
         disabled={isLoading}
-        className={`w-full py-4 rounded-xl font-bold text-white transition-all ${
-          isLoading ? "bg-gray-400" : "bg-coffee hover:bg-coffee-dark shadow-md"
-        }`}
+       className={`w-full py-4 rounded-xl font-bold border-2 transition-all ${
+  isLoading 
+    ? "border-gray-200 text-gray-400" 
+    : "border-amber-900 text-amber-900 hover:bg-amber-50"
+}`}
       >
         {isLoading ? "AI가 메뉴를 고르는 중..." : "추천 받기"}
       </button>
