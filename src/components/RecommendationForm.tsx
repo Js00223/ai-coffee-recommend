@@ -12,7 +12,7 @@ const RecommendationForm: React.FC<FormProps> = ({ onSubmit, isLoading }) => {
 
   // 이스터에그: 계좌번호 복사 및 안내
   const handleEasterEgg = () => {
-    const account = " 카카오 뱅크 3333-19-9763247 (허준서)"; // 본인 계좌로 변경하세요
+    const account = " 카카오 뱅크 3333-19-9763247 (허준서)"; 
     navigator.clipboard.writeText(account).then(() => {
       alert(
         "☕ 개발자에게 따뜻한 커피 한 잔을 선물해주셔서 감사합니다!\n계좌번호가 복사되었습니다: " +
